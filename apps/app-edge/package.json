@@ -1,0 +1,17 @@
+{
+  "name": "app-edge",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-vercel": "1.0.0-next.78",
+    "@sveltejs/kit": "1.0.0-next.513",
+    "svelte": "3.44.0",
+    "vite": "3.1.0"
+  }
+}
