@@ -3,8 +3,8 @@ import { API_URL } from "$env/static/private";
 
 export async function load({ url }) {
   // SSR data
-  const name = url.searchParams.get("name") || "World";
-  const ssrRegion = env.AWS_REGION || "Edge";
+  const name = url.searchParams.get("name");
+  const ssrRegion = env.AWS_REGION || "✨ Edge ✨";
 
   // API data
   const apiResponse = await fetch(API_URL);
@@ -12,13 +12,10 @@ export async function load({ url }) {
 
   const { region: apiRegion, timestamp } = await apiResponse.json();
 
-  const formatter = new Intl.DateTimeFormat("fr", { timeStyle: "medium" });
-  const apiDate = formatter.format(new Date(timestamp));
-
   return {
     api: {
       region: apiRegion,
-      date: apiDate,
+      timestamp,
       cacheStatus: apiCacheStatus,
     },
     name,
