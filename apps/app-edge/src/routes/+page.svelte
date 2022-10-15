@@ -1,11 +1,12 @@
 <script>
   export let data;
-
-  const formatter = new Intl.DateTimeFormat("fr", { timeStyle: "medium" });
-
-  const dateFormatted = formatter.format(new Date(data.date));
 </script>
 
 <h1>Hello {data.name}!</h1>
-<p>Generated at {dateFormatted}</p>
-<p>In {data.location}</p>
+<h2>Page:</h2>
+<p>Region: {data.ssrRegion}</p>
+
+<h2>API:</h2>
+<p>Region: {data.api.region}</p>
+<p>Time: {data.api.date}</p>
+<p>Cache: {data.api.cacheStatus}</p>
