@@ -10,3 +10,4 @@ cp -r apps/app-edge/.vercel/output .vercel
 
 cp config.json .vercel/output/config.json
 
+cp public/index.html .vercel/output/static/index.html
