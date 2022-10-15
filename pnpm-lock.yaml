@@ -23,6 +23,42 @@ importers:
       typescript: 4.8.4
       vite: 3.1.0_sass@1.55.0
 
+  apps/app-history-old:
+    specifiers:
+      '@sveltejs/adapter-vercel': 1.0.0-next.78
+      '@sveltejs/kit': 1.0.0-next.513
+      sass: 1.55.0
+      svelte: 3.44.0
+      svelte-preprocess: 4.10.7
+      typescript: 4.8.4
+      vite: 3.1.0
+    devDependencies:
+      '@sveltejs/adapter-vercel': 1.0.0-next.78
+      '@sveltejs/kit': 1.0.0-next.513_svelte@3.44.0+vite@3.1.0
+      sass: 1.55.0
+      svelte: 3.44.0
+      svelte-preprocess: 4.10.7_pr52bqazpicvccxylkzfiozi24
+      typescript: 4.8.4
+      vite: 3.1.0_sass@1.55.0
+
+  apps/app-history-ssr:
+    specifiers:
+      '@sveltejs/adapter-vercel': 1.0.0-next.78
+      '@sveltejs/kit': 1.0.0-next.513
+      sass: 1.55.0
+      svelte: 3.44.0
+      svelte-preprocess: 4.10.7
+      typescript: 4.8.4
+      vite: 3.1.0
+    devDependencies:
+      '@sveltejs/adapter-vercel': 1.0.0-next.78
+      '@sveltejs/kit': 1.0.0-next.513_svelte@3.44.0+vite@3.1.0
+      sass: 1.55.0
+      svelte: 3.44.0
+      svelte-preprocess: 4.10.7_pr52bqazpicvccxylkzfiozi24
+      typescript: 4.8.4
+      vite: 3.1.0_sass@1.55.0
+
 packages:
 
   /@esbuild/android-arm/0.15.10:

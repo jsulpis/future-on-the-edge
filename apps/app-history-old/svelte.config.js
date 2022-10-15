@@ -5,9 +5,9 @@ import preprocess from "svelte-preprocess";
 const config = {
   preprocess: preprocess(),
   kit: {
-    adapter: vercel({ edge: true }),
+    adapter: vercel(),
     paths: {
-      base: "/app-edge",
+      base: "/app-history-old",
     },
   },
 };

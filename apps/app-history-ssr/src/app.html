@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    %sveltekit.head%
+
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        font-family: Inter var, ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+          sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+          Noto Color Emoji;
+      }
+
+      :root {
+        /* https://www.joshwcomeau.com/shadow-palette/ */
+        --shadow-color: 0deg 0% 0%;
+        --shadow-elevation-medium: 0.2px 0.2px 0.3px
+            hsl(var(--shadow-color) / 0.08),
+          0.7px 0.9px 1.2px -0.4px hsl(var(--shadow-color) / 0.08),
+          1.3px 1.6px 2.2px -0.8px hsl(var(--shadow-color) / 0.07),
+          2.1px 2.6px 3.6px -1.2px hsl(var(--shadow-color) / 0.07),
+          3.5px 4.2px 5.9px -1.6px hsl(var(--shadow-color) / 0.07),
+          5.5px 6.7px 9.3px -2px hsl(var(--shadow-color) / 0.07),
+          8.5px 10.3px 14.3px -2.4px hsl(var(--shadow-color) / 0.06),
+          12.6px 15.3px 21.3px -2.8px hsl(var(--shadow-color) / 0.06);
+        --shadow-elevation-high: 0.2px 0.2px 0.4px
+            hsl(var(--shadow-color) / 0.01),
+          1.1px 1.3px 2.4px -0.1px hsl(var(--shadow-color) / 0.02),
+          1.9px 2.3px 4.3px -0.1px hsl(var(--shadow-color) / 0.03),
+          2.8px 3.4px 6.3px -0.2px hsl(var(--shadow-color) / 0.05),
+          3.9px 4.8px 8.9px -0.3px hsl(var(--shadow-color) / 0.06),
+          5.5px 6.7px 12.4px -0.3px hsl(var(--shadow-color) / 0.07),
+          7.7px 9.4px 17.4px -0.4px hsl(var(--shadow-color) / 0.08),
+          10.7px 13.1px 24.2px -0.4px hsl(var(--shadow-color) / 0.09);
+      }
+    </style>
+  </head>
+  <body>
+    %sveltekit.body%
+  </body>
+</html>
