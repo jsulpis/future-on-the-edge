@@ -35,6 +35,7 @@ const { title } = Astro.props as Props;
         transition: "none",
         history: true,
         controls: false,
+        autoAnimateDuration: 0.5,
       });
     </script>
   </body>
@@ -80,20 +81,5 @@ const { title } = Astro.props as Props;
   h1,
   h2 {
     filter: drop-shadow(0 0 10px black);
-  }
-
-  h2 {
-    font-size: 3rem;
-    margin-bottom: 0;
-  }
-
-  .card {
-    position: relative;
-    background: hsla(0deg 0% 0% / 0.5);
-    padding: 50px 150px;
-    border-radius: 16px;
-    box-shadow: var(--shadow-elevation-high),
-      inset 1px 1px 0px rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
   }
 </style>

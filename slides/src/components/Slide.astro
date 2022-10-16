@@ -1,0 +1,62 @@
+---
+interface Props {
+  animate?: boolean;
+  title: string;
+  subtitle?: string;
+  firstOfGroup?: boolean;
+}
+
+const { animate = false, title, subtitle, firstOfGroup } = Astro.props;
+---
+
+{
+  firstOfGroup && (
+    <section
+      data-background-image="/backgrounds/particles.jpeg"
+      data-auto-animate={animate || firstOfGroup}
+    >
+      <h2 class="centered">{title}</h2>
+    </section>
+  )
+}
+<section
+  data-background-image="/backgrounds/particles.jpeg"
+  data-auto-animate={animate || firstOfGroup}
+>
+  <div class="content">
+    <h2>{title}</h2>
+    <p>{subtitle}</p>
+    <slot />
+  </div>
+</section>
+
+<style lang="scss">
+  section {
+    height: 100%;
+  }
+
+  .content {
+    display: grid;
+    grid-template: auto auto minmax(0, 1fr) / 100%;
+    height: 100%;
+    padding-block: 30px;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin: 0;
+
+    &.centered {
+      font-size: 4rem;
+      position: absolute;
+      inset: 0;
+      height: 1em;
+      margin: auto;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 0.5em auto;
+  }
+</style>

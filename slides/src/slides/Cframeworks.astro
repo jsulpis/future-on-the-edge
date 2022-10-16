@@ -1,8 +1,9 @@
-<section data-background-image="/backgrounds/particles.jpeg">
-  <div class="content">
-    <h2>Ils en parlent</h2>
-    <p>Frameworks JavaScript</p>
+---
+import Slide from "../components/Slide.astro";
+---
 
+<Slide title="Ils en parlent" subtitle="Frameworks JavaScript">
+  <div class="pictures">
     <img
       src="/screenshots/screenshot-sveltekit.jpeg"
       alt="screenshot of sveltekit app on the edge"
@@ -18,33 +19,24 @@
       alt="screenshot of Qwik home page"
     />
   </div>
-</section>
+</Slide>
 
 <style lang="scss">
-  section {
+  .pictures {
+    position: relative;
     height: 100%;
-  }
-
-  .content {
-    display: grid;
-    grid-template: auto auto minmax(0, 1fr) / 100%;
-    place-items: center;
-    height: 100%;
-  }
-
-  p {
-    font-size: 1.5rem;
   }
 
   img {
-    grid-row: 3;
-    grid-column: 1;
+    position: absolute;
+    inset: 0;
+    margin: auto;
     height: 90%;
     box-shadow: var(--shadow-elevation-high);
     border-radius: 8px;
 
     &:nth-of-type(2) {
-      transform: rotate(3deg);
+      transform: rotate(2deg);
     }
 
     &:nth-of-type(3) {
