@@ -16,8 +16,7 @@
       "src": "/_app/.+",
       "headers": { "cache-control": "public, immutable, max-age=31536000" }
     },
-    { "handle": "filesystem" },
-    { "src": "/app-edge/.*", "dest": "/app-edge" }
+    { "handle": "filesystem" }
   ],
   "overrides": {}
 }
