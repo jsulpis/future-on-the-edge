@@ -1,0 +1,63 @@
+<section data-background-image="/backgrounds/particles.jpeg">
+  <div class="content">
+    <h2>Ils en parlent</h2>
+    <p>Cloud Providers</p>
+
+    <img
+      src="/screenshots/screenshot-cloudflare.jpeg"
+      alt="screenshot of cloudflare blog introducing workers"
+    />
+    <img
+      class="fragment fade-in"
+      src="/screenshots/screenshot-vercel.jpeg"
+      alt="screenshot of vercel edge functions"
+    />
+    <img
+      class="fragment fade-in"
+      src="/screenshots/screenshot-netlify.jpeg"
+      alt="screenshot of netlify edge page"
+    />
+    <img
+      class="fragment fade-in"
+      src="/screenshots/screenshot-aws.jpeg"
+      alt="screenshot of aws edge page"
+    />
+  </div>
+</section>
+
+<style lang="scss">
+  section {
+    height: 100%;
+  }
+
+  .content {
+    display: grid;
+    grid-template: auto auto minmax(0, 1fr) / 100%;
+    place-items: center;
+    height: 100%;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  img {
+    grid-row: 3;
+    grid-column: 1;
+    height: 90%;
+    box-shadow: var(--shadow-elevation-high);
+    border-radius: 8px;
+
+    &:nth-of-type(2) {
+      transform: rotate(3deg);
+    }
+
+    &:nth-of-type(3) {
+      transform: rotate(-1deg);
+    }
+
+    &:nth-of-type(4) {
+      transform: rotate(1deg);
+    }
+  }
+</style>
