@@ -83,7 +83,7 @@ importers:
       astro: ^1.0.6
       gh-pages: ^4.0.0
       reveal.js: ^4.3.1
-      sass: ^1.54.5
+      sass: ^1.55.0
     dependencies:
       astro: 1.5.0_sass@1.55.0
       reveal.js: 4.3.1
