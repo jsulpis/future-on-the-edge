@@ -14,6 +14,7 @@ do
     cp -r apps/$appName/.vercel/output/static/_app .vercel/output/static/$appName/_app
 done
 
+cp -r apps/app-history-spa/dist/* .vercel/output/static/app-history-spa
 
 cp config.json .vercel/output/config.json
 cp public/index.html .vercel/output/static/index.html 

@@ -1,0 +1,20 @@
+.list {
+  dt {
+    opacity: 0.7;
+    font-size: 1.5rem;
+
+    &:not(:first-child) {
+      margin-top: 1.2rem;
+    }
+  }
+
+  dd {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  dd img {
+    height: 0.8em;
+    margin-inline: 4px;
+  }
+}
