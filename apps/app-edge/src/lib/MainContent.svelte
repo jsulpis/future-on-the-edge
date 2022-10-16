@@ -42,8 +42,9 @@
     background: hsla(0deg 0% 0% / 0.15);
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
-    gap: 200px;
-    padding: 50px 150px;
+    width: 90%;
+    max-width: 800px;
+    padding-block: 50px;
     border-radius: 16px;
     box-shadow: var(--shadow-elevation-medium),
       inset 1px 1px 0px rgba(255, 255, 255, 0.2);
