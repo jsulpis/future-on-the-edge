@@ -1,0 +1,40 @@
+---
+export interface Props {
+  /**
+   * Title of the page
+   */
+  title: string;
+}
+
+const { title } = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/slides/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <slot />
+
+    <script>
+      import Reveal from "reveal.js";
+
+      Reveal.initialize({
+        transition: "none",
+        history: true,
+        controls: false,
+      });
+    </script>
+  </body>
+</html>
+
+<style lang="scss" is:global>
+  @import "reveal.js/dist/reveal.css";
+  @import "reveal.js/dist/theme/black.css";
+</style>
