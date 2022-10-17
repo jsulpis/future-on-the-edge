@@ -7,8 +7,9 @@
 
   export let data;
 
-  const formatter = new Intl.DateTimeFormat("fr", { timeStyle: "medium" });
-  const apiDate = formatter.format(new Date(data.api.timestamp));
+  const apiDate = new Date(data.api.timestamp).toLocaleTimeString("fr", {
+    timeZone: "Europe/Paris",
+  });
 </script>
 
 <MainContent seed={data.api.timestamp}>

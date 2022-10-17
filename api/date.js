@@ -4,5 +4,5 @@ export default (req, res) => {
     timestamp: new Date().getTime(),
   };
 
-  res.end(JSON.stringify(payload));
+  res.send(payload);
 };
