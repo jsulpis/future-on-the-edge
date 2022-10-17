@@ -1,0 +1,31 @@
+---
+import Slide from "../../components/Slide.astro";
+import Card from "../../components/Card.astro";
+import worldMapLambda from "../../assets/illustrations/world-map-lambda.png";
+import worldMapUser1 from "../../assets/illustrations/world-map-user1.png";
+import worldMapUser2 from "../../assets/illustrations/world-map-user2.png";
+---
+
+<Slide title="Le problème actuel" firstOfGroup>
+  <Card centered>
+    <img src={worldMapLambda} alt="World map with lambda function" />
+    <img
+      class="fragment"
+      src={worldMapUser1}
+      alt="World map with lambda function"
+    />
+    <img
+      class="fragment"
+      src={worldMapUser2}
+      alt="World map with lambda function"
+    />
+  </Card>
+</Slide>
+
+<style>
+  img {
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+  }
+</style>

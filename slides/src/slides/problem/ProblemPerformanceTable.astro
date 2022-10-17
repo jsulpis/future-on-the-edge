@@ -1,0 +1,18 @@
+---
+import Slide from "../../components/Slide.astro";
+import Card from "../../components/Card.astro";
+import performanceTable from "../../assets/illustrations/performanceTable.jpeg";
+---
+
+<Slide title="Le problème actuel">
+  <Card centered>
+    <img src={performanceTable} alt="table of response times" />
+  </Card>
+</Slide>
+
+<style>
+  img {
+    position: absolute;
+    max-height: 100%;
+  }
+</style>

@@ -1,0 +1,42 @@
+---
+import Slide from "../../components/Slide.astro";
+---
+
+<Slide>
+  <h1>
+    The <b>Future</b> of the <b>Web</b>
+    <br /><small>is on the</small><br />
+    <strong>Servers</strong>
+  </h1>
+</Slide>
+
+<style lang="scss">
+  h1 {
+    font-size: 5.5rem;
+    line-height: 1;
+    font-weight: normal;
+  }
+
+  b {
+    font-weight: bold;
+  }
+
+  small {
+    font-size: 0.7em;
+  }
+
+  strong {
+    font-weight: bold !important;
+    font-size: 1.6em;
+    line-height: 1.2;
+    background-image: linear-gradient(
+      35deg,
+      hsl(31deg 100% 51%) 0%,
+      hsl(43deg 100% 50%) 50%,
+      hsl(54deg 100% 50%) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 10px hsla(45deg 100% 62% / 40%));
+  }
+</style>

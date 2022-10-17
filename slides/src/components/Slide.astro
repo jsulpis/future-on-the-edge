@@ -3,12 +3,12 @@ import particles from "../assets/backgrounds/particles.jpeg";
 
 interface Props {
   animate?: boolean;
-  title: string;
+  title?: string;
   subtitle?: string;
   firstOfGroup?: boolean;
 }
 
-const { animate = false, title, subtitle, firstOfGroup } = Astro.props;
+const { animate = true, title, subtitle, firstOfGroup } = Astro.props;
 ---
 
 {

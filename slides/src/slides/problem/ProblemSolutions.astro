@@ -1,0 +1,30 @@
+---
+import Slide from "../../components/Slide.astro";
+import Card from "../../components/Card.astro";
+import containers from "../../assets/illustrations/containers.png";
+import serverless from "../../assets/illustrations/serverless.png";
+---
+
+<Slide title="Les solutions actuelles" firstOfGroup>
+  <Card centered>
+    <div class="content">
+      <img src={containers} alt="containers" />
+      <img class="fragment" src={serverless} alt="serverless" />
+    </div>
+  </Card>
+</Slide>
+
+<style>
+  .content {
+    display: grid;
+    height: 55%;
+    width: 100%;
+    grid-template: 100% / 1fr 1fr;
+    place-items: center;
+  }
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+</style>

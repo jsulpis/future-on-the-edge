@@ -9,6 +9,11 @@ import ProjectDeployment from "../slides/project/ProjectDeployment.astro";
 import HistoryOld from "../slides/history/HistoryOld.astro";
 import HistorySpa from "../slides/history/HistorySpa.astro";
 import HistorySsr from "../slides/history/HistorySsr.astro";
+import HistoryFuture from "../slides/history/HistoryFuture.astro";
+import ProblemLambda from "../slides/problem/ProblemLambda.astro";
+import ProblemSolutions from "../slides/problem/ProblemSolutions.astro";
+import HistoryOtherFeatures from "../slides/history/HistoryOtherFeatures.astro";
+import ProblemPerformanceTable from "../slides/problem/ProblemPerformanceTable.astro";
 ---
 
 <Layout title="The future of the web is on the Edge">
@@ -38,6 +43,13 @@ import HistorySsr from "../slides/history/HistorySsr.astro";
       <BrowserSlide
         url="https://future-on-the-edge.vercel.app/app-history-ssr?name=Zenika"
       />
+
+      <HistoryOtherFeatures />
+      <HistoryFuture />
+
+      <ProblemSolutions />
+      <ProblemLambda />
+      <ProblemPerformanceTable />
     </div>
   </main>
 </Layout>
