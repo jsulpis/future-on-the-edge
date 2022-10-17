@@ -1,0 +1,19 @@
+---
+import Browser from "../components/Browser.svelte";
+import particles from "../assets/backgrounds/particles.jpeg";
+
+interface Props {
+  url: string;
+}
+const { url } = Astro.props;
+---
+
+<section data-background-image={particles}>
+  <Browser url={url} client:visible />
+</section>
+
+<style>
+  section {
+    height: 100%;
+  }
+</style>

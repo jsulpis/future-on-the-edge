@@ -1,9 +1,10 @@
 ---
+import BrowserSlide from "../components/BrowserSlide.astro";
 import Layout from "../layouts/Layout.astro";
 import Aintro from "../slides/Aintro.astro";
 import BcloudProviders from "../slides/BcloudProviders.astro";
 import Cframeworks from "../slides/Cframeworks.astro";
-import DprojetFilRouge from "../slides/DprojetFilRouge.astro";
+import DprojetDescription from "../slides/DprojetDescription.astro";
 ---
 
 <Layout title="The future of the web is on the Edge">
@@ -12,7 +13,20 @@ import DprojetFilRouge from "../slides/DprojetFilRouge.astro";
       <Aintro />
       <BcloudProviders />
       <Cframeworks />
-      <DprojetFilRouge />
+      <DprojetDescription />
+
+      <BrowserSlide
+        url="https://future-on-the-edge.vercel.app/app-history-ssr?name=Zenika"
+      />
+      <BrowserSlide
+        url="https://future-on-the-edge.vercel.app/app-history-old?name=Zenika"
+      />
+      <BrowserSlide
+        url="https://future-on-the-edge.vercel.app/app-history-spa?name=Zenika"
+      />
+      <BrowserSlide
+        url="https://future-on-the-edge.vercel.app/app-history-ssr?name=Zenika"
+      />
     </div>
   </main>
 </Layout>

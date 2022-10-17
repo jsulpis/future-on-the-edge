@@ -1,28 +1,28 @@
 ---
 import Slide from "../components/Slide.astro";
+import cloudflare from "../assets/screenshots/screenshot-cloudflare.jpeg";
+import vercel from "../assets/screenshots/screenshot-vercel.jpeg";
+import netlify from "../assets/screenshots/screenshot-netlify.jpeg";
+import aws from "../assets/screenshots/screenshot-aws.jpeg";
 ---
 
 <Slide title="Ils en parlent" subtitle="Cloud Providers" firstOfGroup>
   <div class="pictures">
     <img
-      src="/screenshots/screenshot-cloudflare.jpeg"
+      src={cloudflare}
       alt="screenshot of cloudflare blog introducing workers"
     />
     <img
       class="fragment fade-in"
-      src="/screenshots/screenshot-vercel.jpeg"
+      src={vercel}
       alt="screenshot of vercel edge functions"
     />
     <img
       class="fragment fade-in"
-      src="/screenshots/screenshot-netlify.jpeg"
+      src={netlify}
       alt="screenshot of netlify edge page"
     />
-    <img
-      class="fragment fade-in"
-      src="/screenshots/screenshot-aws.jpeg"
-      alt="screenshot of aws edge page"
-    />
+    <img class="fragment fade-in" src={aws} alt="screenshot of aws edge page" />
   </div>
 </Slide>
 

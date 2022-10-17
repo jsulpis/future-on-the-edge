@@ -1,4 +1,6 @@
 ---
+import particles from "../assets/backgrounds/particles.jpeg";
+
 interface Props {
   animate?: boolean;
   title: string;
@@ -12,7 +14,7 @@ const { animate = false, title, subtitle, firstOfGroup } = Astro.props;
 {
   firstOfGroup && (
     <section
-      data-background-image="/backgrounds/particles.jpeg"
+      data-background-image={particles}
       data-auto-animate={animate || firstOfGroup}
     >
       <h2 class="centered">{title}</h2>
@@ -20,7 +22,7 @@ const { animate = false, title, subtitle, firstOfGroup } = Astro.props;
   )
 }
 <section
-  data-background-image="/backgrounds/particles.jpeg"
+  data-background-image={particles}
   data-auto-animate={animate || firstOfGroup}
 >
   <div class="content">
