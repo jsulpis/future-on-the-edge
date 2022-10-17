@@ -1,19 +1,47 @@
-<div>
+---
+interface Props {
+  centered?: boolean;
+  title?: string;
+  subtitle?: string;
+}
+const { centered, title, subtitle } = Astro.props;
+---
+
+<div class:list={[{ centered }]}>
+  {title && <h2>{title}</h2>}
+  {subtitle && <p class="fragment">{subtitle}</p>}
   <slot />
 </div>
 
-<style>
+<style lang="scss">
   div {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: hsla(0deg 0% 0% / 0.5);
     border-radius: 16px;
     overflow: hidden;
     box-shadow: var(--shadow-elevation-high),
       inset 1px 1px 0px rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
+
+    display: grid;
+    height: 100%;
+    padding: 2rem 3rem;
+    grid-template-rows: auto auto minmax(0, 1fr);
+  }
+
+  .centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 </style>

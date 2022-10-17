@@ -1,0 +1,25 @@
+---
+import Card from "../components/Card.astro";
+import Slide from "../components/Slide.astro";
+---
+
+<Slide title="Les pages dynamiques : historique">
+  <Card
+    title="2020's : finalement les serveurs c'est pratique"
+    subtitle="SSR, SSG, WASM, Rust..."
+  >
+    <img
+      class="fragment"
+      src="https://i.imgflip.com/6x916j.jpg"
+      title="made at imgflip.com"
+    />
+  </Card>
+</Slide>
+
+<style>
+  img {
+    height: 100%;
+    justify-self: center;
+    border-radius: 6px;
+  }
+</style>
