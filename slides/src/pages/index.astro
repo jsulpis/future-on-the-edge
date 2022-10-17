@@ -1,40 +1,40 @@
 ---
 import BrowserSlide from "../components/BrowserSlide.astro";
 import Layout from "../layouts/Layout.astro";
-import Aintro from "../slides/Aintro.astro";
-import BcloudProviders from "../slides/BcloudProviders.astro";
-import Cframeworks from "../slides/Cframeworks.astro";
-import DprojetDescription from "../slides/DprojetDescription.astro";
-import EhistoryOld from "../slides/EhistoryOld.astro";
-import FhistorySpa from "../slides/FhistorySpa.astro";
-import GhistorySsr from "../slides/GhistorySsr.astro";
-import VercelNetwork from "../slides/VercelNetwork.astro";
+import Intro from "../slides/intro/Intro.astro";
+import IntroCloudProviders from "../slides/intro/IntroCloudProviders.astro";
+import IntroFrameworks from "../slides/intro/IntroFrameworks.astro";
+import ProjetDescription from "../slides/project/ProjetDescription.astro";
+import ProjectDeployment from "../slides/project/ProjectDeployment.astro";
+import HistoryOld from "../slides/history/HistoryOld.astro";
+import HistorySpa from "../slides/history/HistorySpa.astro";
+import HistorySsr from "../slides/history/HistorySsr.astro";
 ---
 
 <Layout title="The future of the web is on the Edge">
   <main class="reveal">
     <div class="slides">
-      <Aintro />
-      <BcloudProviders />
-      <Cframeworks />
-      <DprojetDescription />
+      <Intro />
+      <IntroCloudProviders />
+      <IntroFrameworks />
 
+      <ProjetDescription />
       <BrowserSlide
         url="https://future-on-the-edge.vercel.app/app-history-ssr?name=Zenika"
       />
-      <!-- <VercelNetwork /> -->
+      <!-- <ProjectDeployment /> -->
 
-      <EhistoryOld />
+      <HistoryOld />
       <BrowserSlide
         url="https://future-on-the-edge.vercel.app/app-history-old?name=Zenika"
       />
 
-      <FhistorySpa />
+      <HistorySpa />
       <BrowserSlide
         url="https://future-on-the-edge.vercel.app/app-history-spa?name=Zenika"
       />
 
-      <GhistorySsr />
+      <HistorySsr />
       <BrowserSlide
         url="https://future-on-the-edge.vercel.app/app-history-ssr?name=Zenika"
       />
