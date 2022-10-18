@@ -82,6 +82,7 @@ importers:
     specifiers:
       '@astrojs/svelte': ^1.0.2
       astro: ^1.0.6
+      chart.js: 3.9.1
       gh-pages: ^4.0.0
       reveal.js: ^4.3.1
       sass: ^1.55.0
@@ -89,6 +90,7 @@ importers:
     dependencies:
       '@astrojs/svelte': 1.0.2_sass@1.55.0+svelte@3.44.0
       astro: 1.5.0_sass@1.55.0
+      chart.js: 3.9.1
       reveal.js: 4.3.1
       svelte: 3.44.0
     devDependencies:
@@ -1218,6 +1220,10 @@ packages:
 
   /character-reference-invalid/2.0.1:
     resolution: {integrity: sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==}
+    dev: false
+
+  /chart.js/3.9.1:
+    resolution: {integrity: sha512-Ro2JbLmvg83gXF5F4sniaQ+lTbSv18E+TIf2cOeiH1Iqd2PGFOtem+DUufMZsCJwFE7ywPOpfXFBwRTGq7dh6w==}
     dev: false
 
   /chokidar/3.5.3:
