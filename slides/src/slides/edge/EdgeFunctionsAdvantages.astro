@@ -1,0 +1,33 @@
+---
+import Card from "../../components/Card.astro";
+import Slide from "../../components/Slide.astro";
+---
+
+<Slide
+  title="Edge Functions"
+  subtitle="Fonctions déployées sur le réseau périphérique"
+>
+  <Card>
+    <h2>Bénéfices :</h2>
+    <ul>
+      <li class="fragment">Faible temps de réponse</li>
+      <li class="fragment">Faible temps de démarrage (cold boot)</li>
+      <li class="fragment">Personnalisation de contenus statiques</li>
+      <li class="fragment">...</li>
+    </ul>
+  </Card>
+</Slide>
+
+<style>
+  ul {
+    text-align: left;
+    font-size: 2rem;
+    line-height: 2;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+</style>

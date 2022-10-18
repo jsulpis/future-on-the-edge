@@ -1,0 +1,37 @@
+---
+import Card from "../../components/Card.astro";
+import Slide from "../../components/Slide.astro";
+---
+
+<Slide
+  title="Edge Functions"
+  subtitle="Fonctions déployées sur le réseau périphérique"
+>
+  <Card>
+    <h2>Limitations :</h2>
+    <ul>
+      <li class="fragment">Contraintes plus strictes:</li>
+      <ul>
+        <li class="fragment">limite de taille : 1 MB (vs 50 MB)</li>
+        <li class="fragment">limite de mémoire : 128 MB (vs 1024 MB)</li>
+        <li class="fragment">limite de durée : 5s (vs 10s)</li>
+      </ul>
+      <li class="fragment">APIs Node non supportées (e.g. APIs filesystem)</li>
+      <li class="fragment">Pas de <code>node_modules</code> dans le bundle</li>
+    </ul>
+  </Card>
+</Slide>
+
+<style>
+  ul {
+    text-align: left;
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+</style>

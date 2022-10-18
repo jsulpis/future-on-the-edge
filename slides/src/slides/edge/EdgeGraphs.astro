@@ -1,0 +1,93 @@
+---
+import Card from "../../components/Card.astro";
+import Slide from "../../components/Slide.astro";
+import LineChart from "../../components/LineChart.svelte";
+
+const apiEdge = {
+  label: "API edge",
+  data: [38, 39, 46, 43, 114, 72, 49, 54, 38, 118],
+  color: `hsl(0deg 45% 61%)`,
+};
+
+const apiUsEast = {
+  label: "API us-east",
+  borderDash: [15, 15],
+  data: [251, 189, 239, 124, 120, 78, 116, 155, 135, 289],
+  color: `hsl(112deg 45% 61%)`,
+};
+
+const apiTokyo = {
+  label: "API Tokyo",
+  borderDash: [5, 10],
+  data: [121, 60, 152, 144, 259, 216, 256, 281, 304, 400],
+  color: `hsl(292deg 45% 61%)`,
+};
+
+const ssrEdgeApiEdge = {
+  label: "SSR edge + API edge",
+  //   borderDash: [15, 15],
+  data: [108, 110, 99, 132, 218, 134, 139, 169, 151, 192],
+  color: `hsl(${50}deg 45% 61%)`,
+};
+
+const ssrUsEastapiUsEast = {
+  label: "SSR us-east + API us-east",
+  borderDash: [15, 15],
+  data: [286, 227, 279, 157, 167, 108, 149, 186, 201, 348],
+  color: `hsl(${112 + 90}deg 45% 61%)`,
+};
+
+const ssrUsEastapiTokyo = {
+  label: "SSR us-east + API Tokyo",
+  borderDash: [15, 15],
+  data: [450, 361, 420, 342, 462, 292, 305, 341, 391, 550],
+  color: `hsl(${292 + 90}deg 45% 61%)`,
+};
+
+const ssrEdgeApiUsEast = {
+  label: "SSR edge + API us-east",
+  data: [326, 252, 289, 193, 214, 161, 205, 245, 287, 366],
+  color: `hsl(${0}deg 45% 51%)`,
+};
+---
+
+<Slide title="Ça donne quoi ?" firstOfGroup>
+  <Card>
+    <LineChart datasets={[apiEdge]} client:visible />
+  </Card>
+</Slide>
+
+<Slide title="Ça donne quoi ?" animate={false}>
+  <Card>
+    <LineChart datasets={[apiEdge, apiUsEast, apiTokyo]} client:visible />
+  </Card>
+</Slide>
+
+<Slide title="Ça donne quoi ?" animate={false}>
+  <Card>
+    <LineChart datasets={[apiEdge, ssrEdgeApiEdge]} client:visible />
+  </Card>
+</Slide>
+
+<Slide title="Ça donne quoi ?" animate={false}>
+  <Card>
+    <LineChart
+      datasets={[ssrEdgeApiEdge, ssrUsEastapiUsEast, ssrUsEastapiTokyo]}
+      client:visible
+    />
+  </Card>
+</Slide>
+
+<Slide title="Ça donne quoi ?" animate={false}>
+  <Card>
+    <LineChart
+      datasets={[
+        ssrEdgeApiEdge,
+        ssrUsEastapiUsEast,
+        ssrUsEastapiTokyo,
+        ssrEdgeApiUsEast,
+      ]}
+      client:visible
+    />
+  </Card>
+</Slide>

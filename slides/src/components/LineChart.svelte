@@ -22,7 +22,7 @@
           "Bangalore",
         ],
         datasets: datasets.map((dataset) => ({
-          borderDash: dataset.style === "dashed" ? [15, 15] : [],
+          borderDash: dataset.borderDash || [],
           borderJoinStyle: "round",
           borderCapStyle: "round",
           label: dataset.label,

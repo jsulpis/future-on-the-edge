@@ -1,0 +1,91 @@
+---
+import Slide from "../../components/Slide.astro";
+import edgeComputing from "../../assets/illustrations/edge-computing.jpeg";
+---
+
+<Slide title="Edge Server" subtitle="(Serveur de périphérie)">
+  <img
+    src="https://www.cloudflare.com/img/learning/cdn/glossary/edge-server/cdn-edge-network-device.png"
+    alt="Edge Server"
+  />
+  <a href="https://www.cloudflare.com/learning/cdn/glossary/edge-server/">
+    https://www.cloudflare.com/learning/cdn/glossary/edge-server/
+  </a>
+</Slide>
+
+<Slide title="Edge Server" subtitle="(Serveur de périphérie)" animate={false}>
+  <img
+    src="https://www.cloudflare.com/img/learning/cdn/glossary/edge-server/cdn-edge-server-placement.png"
+    alt="Edge Network"
+  />
+  <a href="https://www.cloudflare.com/learning/cdn/glossary/edge-server/">
+    https://www.cloudflare.com/learning/cdn/glossary/edge-server/
+  </a>
+</Slide>
+
+<Slide
+  title="Edge Network (AWS)"
+  subtitle="(Réseau périphérique)"
+  animate={false}
+>
+  <img
+    src="https://d1.awsstatic.com/global-infrastructure/maps/Cloudfront-Map_9.24_2x.2eeac6e52bf404816c6d0aac3edbeb7b6b87fdaa.png"
+    alt="AWS Edge Network"
+  />
+  <a href="https://aws.amazon.com/cloudfront/features">
+    https://aws.amazon.com/cloudfront/features
+  </a>
+</Slide>
+
+<Slide
+  title="Edge Network (Cloudflare)"
+  subtitle="(Réseau périphérique)"
+  animate={false}
+>
+  <img
+    src="https://www.cloudflare.com/network-maps/cloudflare-pops-2O04nulSdNrRpJR9fs9OKv.svg"
+    alt="Cloudflare Edge Network"
+  />
+  <a href="https://www.cloudflare.com/network/">
+    https://www.cloudflare.com/network/
+  </a>
+</Slide>
+
+<Slide
+  title="Content Delivery Network (CDN)"
+  subtitle="Réseau de Diffusion de Contenu (RDC)"
+  animate={false}
+>
+  <img
+    src="https://cf-assets.www.cloudflare.com/slt3lc6tev37/540CpDkqSDg6QAPi5nO1AP/b44a3edb5abc4e115ddab9b4d9bf7a32/Learning-How-does-a-CDN-work.svg"
+    alt="CDN schema"
+  />
+  <a href="https://www.cloudflare.com/learning/cdn/what-is-a-cdn/">
+    https://www.cloudflare.com/learning/cdn/what-is-a-cdn/
+  </a>
+</Slide>
+
+<Slide
+  title="Edge Computing"
+  subtitle="(Informatique de périphérie)"
+  animate={false}
+>
+  <img src={edgeComputing} alt="Edge computing" />
+</Slide>
+
+<style>
+  img {
+    justify-self: center;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 16px;
+    background-color: white;
+  }
+
+  a {
+    color: black;
+    position: relative;
+    top: -200%;
+    font-size: 0.8rem;
+  }
+</style>
