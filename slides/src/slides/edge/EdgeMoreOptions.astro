@@ -1,5 +1,6 @@
 ---
 import Card from "../../components/Card.astro";
+import nope from "../../assets/illustrations/nope.jpeg";
 import Slide from "../../components/Slide.astro";
 ---
 
@@ -27,6 +28,7 @@ import Slide from "../../components/Slide.astro";
         />
       </li>
     </ul>
+    <img class="nope fragment" src={nope} alt="nope" />
   </Card>
 </Slide>
 
@@ -58,6 +60,10 @@ import Slide from "../../components/Slide.astro";
   }
 
   .couchbase {
+    height: 150px;
+  }
+
+  .nope {
     height: 150px;
   }
 
