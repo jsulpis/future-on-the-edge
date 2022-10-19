@@ -64,6 +64,28 @@ const { title } = Astro.props as Props;
     }
   }
 
+  .slide-background::after,
+  .slide-background-content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide-background::after {
+    background: hsl(196deg 37% 18%);
+    mix-blend-mode: hue;
+    opacity: 0.7;
+  }
+
+  .slide-background-content::after {
+    background: radial-gradient(hsl(196deg 37% 18%), black);
+    mix-blend-mode: hard-light;
+    opacity: 0.7;
+  }
+
   :root {
     /* https://www.joshwcomeau.com/shadow-palette/ */
     --shadow-color: 0deg 0% 0%;

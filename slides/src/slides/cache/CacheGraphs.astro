@@ -2,10 +2,16 @@
 import Card from "../../components/Card.astro";
 import Slide from "../../components/Slide.astro";
 import LineChart from "../../components/LineChart.svelte";
-import lambdaFunctionEdge from "../../assets/illustrations/lambdaFunctionEdge.png";
+
+const apiCache = {
+  label: "API us-east + cache",
+  data: [24, 25, 23, 24, 85, 53, 19, 33, 21, 95],
+  color: `hsl(50deg 45% 61%)`,
+};
 
 const apiEdge = {
   label: "API edge",
+  borderDash: [5, 10],
   data: [38, 39, 46, 43, 114, 72, 49, 54, 38, 118],
   color: `hsl(0deg 45% 61%)`,
 };
@@ -19,15 +25,16 @@ const apiUsEast = {
 
 const apiTokyo = {
   label: "API Tokyo",
-  borderDash: [5, 10],
+  borderDash: [1, 15],
   data: [121, 60, 152, 144, 259, 216, 256, 281, 304, 400],
   color: `hsl(292deg 45% 61%)`,
 };
 
 const ssrEdgeApiEdge = {
   label: "SSR edge + API edge",
+  borderDash: [5, 10],
   data: [108, 110, 99, 132, 218, 134, 139, 169, 151, 192],
-  color: `hsl(${50}deg 45% 61%)`,
+  color: `hsl(${0}deg 45% 51%)`,
 };
 
 const ssrUsEastapiUsEast = {
@@ -39,67 +46,51 @@ const ssrUsEastapiUsEast = {
 
 const ssrUsEastapiTokyo = {
   label: "SSR us-east + API Tokyo",
-  borderDash: [15, 15],
+  borderDash: [1, 15],
   data: [450, 361, 420, 342, 462, 292, 305, 341, 391, 550],
   color: `hsl(${292 + 90}deg 45% 61%)`,
 };
 
-const ssrEdgeApiUsEast = {
-  label: "SSR edge + API us-east",
-  data: [326, 252, 289, 193, 214, 161, 205, 245, 287, 366],
-  color: `hsl(${0}deg 45% 51%)`,
+const ssrEdgeApiCache = {
+  label: "SSR edge + API cached",
+  data: [85, 90, 86, 89, 260, 124, 119, 155, 152, 144],
+  color: `hsl(50deg 45% 61%)`,
 };
 ---
 
-<Slide title="Ça donne quoi ?" subtitle="Sur Vercel" firstOfGroup>
-  <img src={lambdaFunctionEdge} alt="Code for lambda function on the edge" />
-</Slide>
-
-<Slide title="Ça donne quoi ?">
+<Slide title="Avec du cache" subtitle="Temps de réponse de l'API">
   <Card>
-    <LineChart datasets={[apiEdge]} client:visible />
+    <LineChart datasets={[apiCache]} client:visible />
   </Card>
 </Slide>
 
-<Slide title="Ça donne quoi ?" animate={false}>
-  <Card>
-    <LineChart datasets={[apiEdge, apiUsEast, apiTokyo]} client:visible />
-  </Card>
-</Slide>
-
-<Slide title="Ça donne quoi ?" animate={false}>
-  <Card>
-    <LineChart datasets={[apiEdge, ssrEdgeApiEdge]} client:visible />
-  </Card>
-</Slide>
-
-<Slide title="Ça donne quoi ?" animate={false}>
+<Slide
+  title="Avec du cache"
+  subtitle="Temps de réponse de l'API"
+  animate={false}
+>
   <Card>
     <LineChart
-      datasets={[ssrEdgeApiEdge, ssrUsEastapiUsEast, ssrUsEastapiTokyo]}
+      datasets={[apiCache, apiEdge, apiUsEast, apiTokyo]}
       client:visible
     />
   </Card>
 </Slide>
 
-<Slide title="Ça donne quoi ?" animate={false}>
+<Slide
+  title="Avec du cache"
+  subtitle="Temps de réponse de la page"
+  animate={false}
+>
   <Card>
     <LineChart
       datasets={[
-        ssrEdgeApiEdge,
         ssrUsEastapiUsEast,
         ssrUsEastapiTokyo,
-        ssrEdgeApiUsEast,
+        ssrEdgeApiEdge,
+        ssrEdgeApiCache,
       ]}
       client:visible
     />
   </Card>
 </Slide>
-
-<style>
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    justify-self: center;
-  }
-</style>

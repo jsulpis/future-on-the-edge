@@ -20,6 +20,11 @@ import EdgeNetwork from "../slides/edge/EdgeNetwork.astro";
 import EdgeFunctionsAdvantages from "../slides/edge/EdgeFunctionsAdvantages.astro";
 import EdgeFunctionsLimitations from "../slides/edge/EdgeFunctionsLimitations.astro";
 import EdgeGraphs from "../slides/edge/EdgeGraphs.astro";
+import ProblemLambdaSample from "../slides/problem/ProblemLambdaSample.astro";
+import EdgeMoreOptions from "../slides/edge/EdgeMoreOptions.astro";
+import CacheTitle from "../slides/cache/CacheTitle.astro";
+import CacheSample from "../slides/cache/CacheSample.astro";
+import CacheGraphs from "../slides/cache/CacheGraphs.astro";
 ---
 
 <Layout title="The future of the web is on the Edge">
@@ -54,6 +59,7 @@ import EdgeGraphs from "../slides/edge/EdgeGraphs.astro";
       <HistoryFuture />
 
       <ProblemSolutions />
+      <ProblemLambdaSample />
       <ProblemLambda />
       <ProblemPerformanceTable />
       <ProblemGraph />
@@ -65,6 +71,14 @@ import EdgeGraphs from "../slides/edge/EdgeGraphs.astro";
       <EdgeGraphs />
       <BrowserSlide
         url="https://future-on-the-edge.vercel.app/app-edge?name=Zenika&api=edge"
+      />
+      <EdgeMoreOptions />
+
+      <CacheTitle />
+      <CacheSample />
+      <CacheGraphs />
+      <BrowserSlide
+        url="https://future-on-the-edge.vercel.app/app-edge?api=with-cache&name=Zenika"
       />
     </div>
   </main>

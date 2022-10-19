@@ -1,5 +1,6 @@
 ---
 import particlesVideo from "../../assets/backgrounds/particles.mp4";
+import MainTitle from "../../components/MainTitle.astro";
 ---
 
 <section
@@ -8,64 +9,9 @@ import particlesVideo from "../../assets/backgrounds/particles.mp4";
   data-background-video-loop
   data-background-video-muted
 >
-  <h1>
+  <MainTitle>
     The <b>Future</b> of the <b>Web</b>
     <br /><small>is on the</small><br />
     ✨ <strong>Edge</strong> ✨
-  </h1>
+  </MainTitle>
 </section>
-
-<style lang="scss">
-  h1 {
-    font-size: 5.5rem;
-    line-height: 1;
-    font-weight: normal;
-  }
-
-  b {
-    font-weight: bold;
-  }
-
-  small {
-    font-size: 0.7em;
-  }
-
-  strong {
-    font-weight: bold !important;
-    font-size: 1.6em;
-    line-height: 1.2;
-    background-image: linear-gradient(
-      35deg,
-      hsl(31deg 100% 51%) 0%,
-      hsl(43deg 100% 50%) 50%,
-      hsl(54deg 100% 50%) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 10px hsla(45deg 100% 62% / 40%));
-  }
-</style>
-
-<style is:global>
-  .slide-background::after,
-  .slide-background-content::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .slide-background::after {
-    background: hsl(196deg 37% 18%);
-    mix-blend-mode: hue;
-    opacity: 0.7;
-  }
-
-  .slide-background-content::after {
-    background: radial-gradient(hsl(196deg 37% 18%), black);
-    mix-blend-mode: hard-light;
-    opacity: 0.7;
-  }
-</style>

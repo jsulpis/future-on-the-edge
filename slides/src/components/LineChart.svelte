@@ -83,7 +83,7 @@
   });
 </script>
 
-<canvas bind:this={canvasElement} width="800" height="600" />
+<canvas bind:this={canvasElement} width="800" height="550" />
 
 <style>
   canvas {

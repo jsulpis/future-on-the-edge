@@ -4,6 +4,6 @@ export default (req, res) => {
     timestamp: new Date().getTime(),
   };
 
-  res.setHeader("Cache-Control", `s-maxage=20, stale-while-revalidate`);
+  res.setHeader("Cache-Control", `s-maxage=20, stale-while-revalidate=60`);
   res.send(payload);
 };
