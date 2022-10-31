@@ -4,7 +4,7 @@ export const config = {
 
 export default () => {
   const payload = {
-    region: process.env.AWS_REGION || "✨ Edge ✨",
+    region: "✨ Edge ✨",
     timestamp: new Date().getTime(),
   };
 

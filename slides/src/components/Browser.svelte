@@ -58,8 +58,10 @@
     border-radius: 50%;
     cursor: pointer;
     padding: 4px;
-    height: 32px;
-    width: 32px;
+    height: 36px;
+    width: 36px;
+    display: grid;
+    place-items: center;
     transition: background-color 100ms;
   }
   button:hover {

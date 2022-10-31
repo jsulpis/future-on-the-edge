@@ -26,6 +26,9 @@ import CacheSample from "../slides/cache/CacheSample.astro";
 import CacheGraphs from "../slides/cache/CacheGraphs.astro";
 import MiddleWareTitle from "../slides/middlewares/MiddleWareTitle.astro";
 import MiddlewareImages from "../slides/middlewares/MiddlewareImages.astro";
+import GetStarted from "../slides/outro/GetStarted.astro";
+import FutureIsNow from "../slides/outro/FutureIsNow.astro";
+import Ressources from "../slides/outro/Ressources.astro";
 ---
 
 <Layout title="The future of the web is on the Edge">
@@ -69,9 +72,6 @@ import MiddlewareImages from "../slides/middlewares/MiddlewareImages.astro";
       <EdgeFunctionsAdvantages />
       <EdgeFunctionsLimitations />
       <EdgeGraphs />
-      <BrowserSlide
-        url="https://future-on-the-edge.vercel.app/app-edge?name=Zenika&api=edge"
-      />
       <EdgeMoreOptions />
 
       <CacheTitle />
@@ -83,6 +83,13 @@ import MiddlewareImages from "../slides/middlewares/MiddlewareImages.astro";
 
       <MiddleWareTitle />
       <MiddlewareImages />
+
+      <GetStarted />
+      <BrowserSlide url="https://sveltekit-on-the-edge.vercel.app/" />
+      <BrowserSlide url="https://nuxt-on-the-edge.vercel.app/" />
+      <BrowserSlide url="https://react-on-the-edge.vercel.app/" />
+      <FutureIsNow />
+      <Ressources />
     </div>
   </main>
 </Layout>

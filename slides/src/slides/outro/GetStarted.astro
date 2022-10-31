@@ -1,0 +1,41 @@
+---
+import particles from "../../assets/backgrounds/particles.jpeg";
+---
+
+<section data-background-image={particles} data-auto-animate>
+  <div class="centered">
+    <h1>Comment on démarre ?</h1>
+    <p class="fragment">(rtfm)</p>
+  </div>
+</section>
+
+<style lang="scss">
+  section {
+    height: 100%;
+  }
+
+  .content {
+    display: grid;
+    grid-template: auto auto minmax(0, 1fr) / 100%;
+    height: 100%;
+    padding-block: 30px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .centered {
+    font-size: 4rem;
+    position: absolute;
+    inset: 0;
+    height: 1em;
+    margin: auto;
+  }
+
+  p {
+    font-size: 2rem;
+    margin: 0.25em auto 1em;
+  }
+</style>

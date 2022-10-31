@@ -1,36 +1,7 @@
 ---
 import Card from "../../components/Card.astro";
-import nope from "../../assets/illustrations/nope.jpeg";
 import Slide from "../../components/Slide.astro";
 ---
-
-<Slide title="Et si on utilisait...">
-  <Card>
-    <h2 class="fragment">... une base de donnée distribuée ?</h2>
-    <ul class="fragment">
-      <li>
-        <img
-          src="https://fauna.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fpo4qc9xpmpuh%2F7itYmeRxmVGIXwwGWHrQU3%2F42f3e7fa7d39fab5b6222f6199f0203c%2FFauna_Logo.svg&w=384&q=75"
-          alt="logo fauna"
-        />
-      </li>
-      <li>
-        <img
-          src="https://cassandra.apache.org/assets/img/logo-white.svg"
-          alt="logo cassandra"
-        />
-      </li>
-      <li>
-        <img
-          class="couchbase"
-          src="https://salesforlife.com/wp-content/uploads/2021/04/Couchbase-Logo-300x144-1.png"
-          alt="logo couchbase"
-        />
-      </li>
-    </ul>
-    <img class="nope fragment" src={nope} alt="nope" />
-  </Card>
-</Slide>
 
 <Slide title="Et si on utilisait...">
   <Card>
@@ -45,26 +16,8 @@ import Slide from "../../components/Slide.astro";
 </Slide>
 
 <style>
-  ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style: none;
-    gap: 0 50px;
-    margin-top: 50px;
-  }
-
   img {
     height: 80px;
-  }
-
-  .couchbase {
-    height: 150px;
-  }
-
-  .nope {
-    height: 150px;
   }
 
   .meme {
