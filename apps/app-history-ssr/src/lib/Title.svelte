@@ -4,7 +4,7 @@
   $: formattedName = name ? name[0].toUpperCase() + name.slice(1) : "";
 </script>
 
-<h1>Salut <strong>{formattedName}</strong> 👋</h1>
+<h1>Bonjour <strong>{formattedName}</strong> 👋</h1>
 
 <style>
   h1 {

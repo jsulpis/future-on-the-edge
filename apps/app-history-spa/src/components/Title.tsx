@@ -6,7 +6,7 @@ export const Title: FC<{ name?: string | null }> = ({ name }) => {
 
   return (
     <h1 className={styles.title}>
-      Salut <strong>{formattedName}</strong> 👋
+      Bonjour <strong>{formattedName}</strong> 👋
     </h1>
   );
 };
