@@ -1,34 +1,37 @@
 ---
-import Card from "../../components/Card.astro";
 import Slide from "../../components/Slide.astro";
+import cacheMeme from "../../assets/illustrations/meme-cache.png"
 ---
 
-<Slide title="Et si on utilisait...">
-  <Card>
-    <h2 class="fragment" data-fragment-index="1">... du cache ?</h2>
-    <img
+<Slide title="Et si on utilisait..." firstOfGroup>
+    <div>
+      <h2 class="" data-fragment-index="1">... du cache ?</h2>
+      <img
       data-fragment-index="1"
-      class="fragment meme"
-      src="https://media.tenor.com/Oc4nf8N08jIAAAAC/mind-blow-galaxy.gif"
+      class="meme"
+      src={cacheMeme}
       alt="meme mind blown"
-    />
-  </Card>
+      />
+    </div>
 </Slide>
 
 <style>
-  img {
-    height: 80px;
-  }
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .meme {
-    height: 100%;
-    margin: 30px auto;
+    margin: auto;
     border-radius: 8px;
+    height: 90%;
+    grid-row: span 2;
   }
 
   h2 {
     text-align: left;
     font-size: 2rem;
-    margin-bottom: 0;
+    margin: 0;
   }
 </style>

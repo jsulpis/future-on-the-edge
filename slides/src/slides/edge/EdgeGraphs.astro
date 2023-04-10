@@ -7,7 +7,7 @@ import lambdaFunctionEdge from "../../assets/illustrations/lambdaFunctionEdge.pn
 const apiEdge = {
   label: "API Edge",
   data: [38, 39, 46, 43, 114, 72, 49, 54, 38, 118],
-  color: `hsl(0deg 45% 61%)`,
+  color: `hsl(0deg 45% 51%)`,
 };
 
 const apiUsEast = {
@@ -19,19 +19,19 @@ const apiUsEast = {
 
 const apiTokyo = {
   label: "API Tokyo",
-  borderDash: [5, 10],
+  borderDash: [1, 10],
   data: [121, 60, 152, 144, 259, 216, 256, 281, 304, 400],
   color: `hsl(292deg 45% 61%)`,
 };
 
 const ssrEdgeApiEdge = {
-  label: "SSR + API Edge",
+  label: "{ SSR + API } Edge",
   data: [108, 110, 99, 132, 218, 134, 139, 169, 151, 192],
-  color: `hsl(${50}deg 45% 61%)`,
+  color: `hsl(${50}deg 45% 71%)`,
 };
 
 const ssrUsEastapiUsEast = {
-  label: "SSR + API Washington",
+  label: "{ SSR + API } Washington",
   borderDash: [15, 15],
   data: [286, 227, 279, 157, 167, 108, 149, 186, 201, 348],
   color: `hsl(${112 + 90}deg 45% 61%)`,
@@ -39,7 +39,7 @@ const ssrUsEastapiUsEast = {
 
 const ssrUsEastapiTokyo = {
   label: "SSR Washington + API Tokyo",
-  borderDash: [15, 15],
+  borderDash: [1, 10],
   data: [450, 361, 420, 342, 462, 292, 305, 341, 391, 550],
   color: `hsl(${292 + 90}deg 45% 61%)`,
 };
@@ -86,9 +86,7 @@ const ssrEdgeApiUsEast = {
   <Card>
     <LineChart
       datasets={[
-        ssrEdgeApiEdge,
         ssrUsEastapiUsEast,
-        ssrUsEastapiTokyo,
         ssrEdgeApiUsEast,
       ]}
       client:visible

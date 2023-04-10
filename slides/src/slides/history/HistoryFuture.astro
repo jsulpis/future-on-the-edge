@@ -1,12 +1,23 @@
 ---
-import MainTitle from "../../components/MainTitle.astro";
 import Slide from "../../components/Slide.astro";
+import kentTweet from "../../assets/illustrations/tweet_kent_c_dodds.png";
 ---
 
-<Slide>
-  <MainTitle>
-    The <b>Future</b> of the <b>Web</b>
-    <br /><small>is on</small><br />
-    ✨ <strong>Servers</strong> ✨
-  </MainTitle>
+<Slide title="Le futur du web est sur les serveurs">
+  <img src={kentTweet} alt="Tweet de Kent C. Dodds disant que le futur du web est sur les serveurs" />
 </Slide>
+
+<style>
+  img {
+    max-width: 95%;
+    max-height: 100%;
+    justify-self: center;
+    border-radius: 24px;
+    margin-top: 8%;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    box-shadow: var(--shadow-elevation-high);
+  }
+  h1 {
+    margin-top: 10%;
+  }
+</style>
