@@ -2,6 +2,8 @@
 import Slide from "../../components/Slide.astro";
 import Card from "../../components/Card.astro";
 import middlewareAuth from "../../assets/illustrations/middlewareAuth.png";
+import middlewareHeaders from "../../assets/illustrations/middlewareHeaders.png";
+import middlewarei18n from "../../assets/illustrations/middlewarei18n.png";
 import middlewareFeatureFlip from "../../assets/illustrations/middlewareFeatureFlip.png";
 ---
 
@@ -24,24 +26,25 @@ import middlewareFeatureFlip from "../../assets/illustrations/middlewareFeatureF
 
 <Slide
   title="Au-delà des APIs..."
-  subtitle="d'autres usages des edge functions"
+  subtitle="Redirection i18n"
   animate={false}
 >
-  <img src={middlewareAuth} alt="code for middleware Authentication" />
+  <img src={middlewareAuth} alt="code for middleware authentication" />
 </Slide>
 
 <Slide
   title="Au-delà des APIs..."
-  subtitle="d'autres usages des edge functions"
+  subtitle="Modification de headers"
   animate={false}
 >
-  <img src={middlewareFeatureFlip} alt="code for middleware feature flipping" />
+  <img src={middlewareHeaders} alt="code for headers modification" />
 </Slide>
 
 <style>
   img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 120%;
+    max-height: 105%;
+    margin-top: -2%;
     justify-self: center;
   }
 

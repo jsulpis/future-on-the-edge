@@ -1,0 +1,71 @@
+---
+import Card from "../../components/Card.astro";
+import Slide from "../../components/Slide.astro";
+---
+
+<Slide title="Le stockage sur le réseau périphérique" firstOfGroup>
+  <Card centered>
+    <h2>Stockage clé-valeur</h2>
+    <div class="content">
+      <div class="column">
+        <h3>
+          <img
+            src="https://cdn.svgporn.com/logos/cloudflare-workers-icon.svg"
+            alt="cloudflare icon"
+          />
+          Cloudflare
+        </h3>
+
+        <p>Workers KV</p>
+      </div>
+
+      <div class="column">
+        <h3>
+          <img
+            class="vercel"
+            src="https://cdn.svgporn.com/logos/vercel-icon.svg"
+            alt="vercel icon"
+          />
+          Vercel
+        </h3>
+        <p>Edge Config</p>
+      </div>
+    </div>
+  </Card>
+</Slide>
+
+<style lang="scss">
+  .content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+
+  h3 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-top: .5em;
+  }
+
+  img {
+    height: 1em;
+
+    &.vercel {
+      filter: invert(1);
+    }
+  }
+</style>
