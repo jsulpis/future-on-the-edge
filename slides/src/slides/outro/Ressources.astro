@@ -5,6 +5,16 @@ import Slide from "../../components/Slide.astro";
 
 <Slide title="Ressources">
   <Card centered>
+    <a href="https://twitter.com/jsulpis" class="twitter">
+      <img src="https://cdn.svgporn.com/logos/twitter.svg" alt="twitter logo" />
+      @jsulpis
+      <img src="https://cdn.svgporn.com/logos/github-icon.svg" alt="twitter github" />
+    </a>
+
+    <a href="https://future-on-the-edge.vercel.app/">
+    https://future-on-the-edge.vercel.app/
+    </a>
+
     <div class="content">
       <div class="column">
         <p>
@@ -20,11 +30,14 @@ import Slide from "../../components/Slide.astro";
           </li>
           <li>
             <a
-              href="https://developers.cloudflare.com/workers/learning/how-workers-works/"
+            href="https://developers.cloudflare.com/workers/learning/how-workers-works/"
             >
-              Comment ça fonctionne
-            </a>
-          </li>
+            Comment ça fonctionne
+          </a>
+        </li>
+        <li>
+          <a href="https://www.cloudflare.com/fr-fr/products/workers-kv/">Workers KV</a>
+        </li>
           <li>
             <a href="https://developers.cloudflare.com/workers/examples/">
               Exemples
@@ -57,6 +70,13 @@ import Slide from "../../components/Slide.astro";
           </li>
           <li>
             <a
+              href="https://vercel.com/docs/concepts/edge-network/edge-config"
+            >
+              Edge Config
+            </a>
+          </li>
+          <li>
+            <a
               href="https://github.com/vercel/examples/tree/main/edge-functions"
             >
               Exemples
@@ -66,14 +86,7 @@ import Slide from "../../components/Slide.astro";
       </div>
     </div>
 
-    <a href="https://twitter.com/jsulpis" class="twitter">
-      <img src="https://cdn.svgporn.com/logos/twitter.svg" alt="twitter logo" />
-      @jsulpis
-    </a>
 
-    <a href="https://future-on-the-edge.vercel.app/">
-      https://future-on-the-edge.vercel.app/
-    </a>
   </Card>
 </Slide>
 
@@ -88,7 +101,7 @@ import Slide from "../../components/Slide.astro";
   .content {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-top: 50px;
     width: 100%;
   }
 
@@ -96,8 +109,8 @@ import Slide from "../../components/Slide.astro";
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    font-size: 1.5rem;
+    gap: 12px;
+    font-size: 1.8rem;
     margin-bottom: 1em;
     font-weight: bold;
 

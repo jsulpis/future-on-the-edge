@@ -1,12 +1,12 @@
 export const config = {
-  runtime: "experimental-edge",
+   runtime: "experimental-edge",
 };
 
 export default () => {
-  const payload = {
-    region: "✨ Edge ✨",
-    timestamp: new Date().getTime(),
-  };
+   const payload = {
+      region: "✨ Edge ✨",
+      timestamp: new Date().getTime(),
+   };
 
-  return new Response(JSON.stringify(payload));
+   return new Response(JSON.stringify(payload));
 };
