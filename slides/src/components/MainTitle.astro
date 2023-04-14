@@ -18,17 +18,27 @@
 
     strong {
       font-weight: bold !important;
-      font-size: 1.6em;
+      font-size: .85em;
+      
       line-height: 1.2;
       background-image: linear-gradient(
         35deg,
-        hsl(31deg 100% 51%) 0%,
+        hsl(36deg 100% 51%) 0%,
         hsl(43deg 100% 50%) 50%,
         hsl(54deg 100% 50%) 100%
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       filter: drop-shadow(0 0 10px hsla(45deg 100% 62% / 40%));
+
+      &::before {
+        content: "✨";
+        margin: .1em;
+      }
+      &::after {
+        content: "✨";
+        margin: .1em;
+      }
     }
   }
 </style>
